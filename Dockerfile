@@ -14,11 +14,10 @@ gnupg \
 gcc \
 g++ \
 make \
+nodejs \
+npm \
 && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
-&& apt install -y nodejs \
-&& apt install -y npm \
 && rm -rf /var/lib/apt/lists/*
-
 
 RUN npm install -g appcenter-cli
 
